@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="feathered trails icon.ico">
     <style>
         body,
         h1,
@@ -51,19 +52,30 @@
         <a href="#download" class="w3-bar-item w3-button ">Download</a>
         <a href="#features" class="w3-bar-item w3-button ">Features</a>
         <a href="#how-to-play" class="w3-bar-item w3-button ">How To Play</a>
+        <a href="#bugs" class="w3-bar-item w3-button ">Feedback</a>
+        <a href="#releases" class="w3-bar-item w3-button ">Releases</a>
     </div> 
 
-    <!-- The App Section -->
-    <div id="download" class="w3-padding-64 w3-white">
+    <!-- about -->
+    <div id="about" class=" w3-white">
+        <div class="w3-row-padding">
+            <div class="w3-col">
+                <h2><b>About</b></h2>
+                <p>Feathered Trails is a Location based mobile game inspired by Pokemon Go and Pikmin Bloom with the aim of encouraging walking while teaching players about the birds around them.</p>
+                <p>Bird data is fetched from <a href="https://www.inaturalist.org/observations">iNaturalist</a> within a radius of the players location</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="download" class=" w3-white">
         <div class="w3-row-padding">
             <div class="w3-col">
                 <h2><b>Beta Download</b></h1>
                     <p>To download, follow these instructions: </p>
                     <ol>
-                        <li>Click the button below, make sure to allow download permissions.
+                        <li>Click the 'download' button below, make sure to allow download permissions for your browser.
                         </li>
-                        <li>Then, find the downloaded .apk file in your files app, it will be named something like
-                            'feathered trails v0.2.3.apk'.</li>
+                        <li>Then, find the downloaded .apk file in your files app, it will be named something like 'feathered trails v0.2.3.apk'.</li>
                         <li>Tap it and click install. </li>
                         <li>Once the app is installed, open it and make sure to enable location permissions.</li>
                     </ol>
@@ -82,8 +94,8 @@
     </div>
 
     <!-- Features Section -->
-    <div id="features" class="w3-container w3-padding-64 w3-dark-grey w3-center">
-        <h1>Features</h1>
+    <div id="features" class="w3-container  w3-dark-grey w3-center">
+        <h1><b>Features</b></h1>
         <div class="w3-center" style="margin: 0 auto; width: 100%; max-width: 500px;">
             <div class="feature-card w3-col w3-half w3-col s6">
                 <div class="w3-card" style="width:100%">
@@ -125,28 +137,91 @@
                     </div>
                 </div>
             </div>
+            <div class="feature-card w3-col w3-half w3-col s6">
+                <div class="w3-card" style="width:100%">
+                    <img src="walking line.png" alt="screenshot" style="width:100%">
+                    <div class="w3-container">
+                        <p>Track how much you've walked</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
     <!-- how to -->
-    <div id="how-to-play" class="w3-padding-64 w3-white">
+    <div id="how-to-play" class=" w3-white">
         <div class="w3-row-padding">
             <div class="w3-col">
                 <h2><b>How To Play</b></h1>
-
-                    <p>How to play:</p>
                     <ul>
                         <li>Tap on the trees on the map with a (1 in 10) chance of finding a bird! (trees have a 5
                             minute cooldown before you can try again) </li>
                         <li>Birds are local to your location.</li>
                         <li>See the birds you have found, as well as your walking stats by tapping the notebook in the
                             bottom right.</li>
-                        <li>Tap a species in the Species page to see more information on that species and listen to its
-                            sound.</li>
+                        <li>Tap a species in the Species page to see more information on that species and listen to its sound.
+
+                        </li>
+                        <li>
+                            Set your walking goal and view your stats by tapping the 'Stats' button. 
+                        </li>
                         <li>For more info and to check for updates, visit the website by clicking the 'website' button.
                         </li>
                     </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- bugs -->
+    <div id="bugs" class="w3-white">
+        <div class="w3-row-padding">
+            <div class="w3-col">
+                <h2><b>Bug Report and feedback</b></h1>
+                    <p>Found a bug or error, or have some other feedback? Submit a bug report!</p>
+                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=kfCdVhOw40CG7r2cueJYFAFcmadQ8aVKnc0fxeSGcm5UMzcwQkpEUkNVVlVTMFpCWVdHREw4RlNDUS4u" style="text-decoration: none;">
+                        <button type="button" class="w3-button w3-block w3-padding-large w3-gray w3-margin-bottom" style="width:100%;max-width:300px w3-center">
+                            <i class="fa fa-bug"></i>
+                            Bug report form
+                        </button>
+                    </a> 
+            </div>
+            <div class="w3-col">
+                <h3>Known Bugs</h3>
+                <p>Please note that bird photos, sounds and information are fetched externally from iNaturalist. I do not have control over the quality or content of these.</p>
+                <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Version</th>
+                      <th>Bug</th>
+                      <th>Fixed?</th>
+                    </tr>
+                    <tr>
+                      <td>0.2.3.1</td>
+                      <td>If app closed and reopened without fully reloading, location stops updating. To solve, fully close the app before opening it again.</td>
+                      <td>No</td>
+                    </tr>
+                  </table>
+            </div>
+
+            <div id="releases" class=" w3-white">
+                <div class="w3-row-padding">
+                    <h2><b>Releases & Patch Notes</b></h2>
+                    <table class="w3-table w3-striped">
+                        <tr>
+                            <th>Version</th>
+                            <th>Date</th>
+                            <th>Changes</th>
+                        </tr>
+                        <tr>
+                            <td><a href="feathered trails v0.2.3.1.apk"                        download="feathered trails v0.2.3.1.apk">v0.2.3.1</a></td>
+                            <td>30th March 2024</td>
+                            <td>
+                                Initial beta release
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
         </div>
     </div>
